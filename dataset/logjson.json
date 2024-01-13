@@ -1,0 +1,19 @@
+{
+	"name": "logjson",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "logjsonlink",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "myfilesysname"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,9 @@
+{
+	"name": "ferrifactory",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "538330e5-b0f7-4714-89e7-221665640f4b",
+		"tenantId": "515ce895-43b1-400b-9c62-a30440ffb978"
+	}
+}

@@ -1,0 +1,41 @@
+{
+	"name": "mapppingdataflowfactsales",
+	"properties": {
+		"activities": [
+			{
+				"name": "dataflowfactsales",
+				"type": "ExecuteDataFlow",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 2,
+					"retryIntervalInSeconds": 120,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataflow": {
+						"referenceName": "dataflowactSales",
+						"type": "DataFlowReference"
+					},
+					"staging": {
+						"linkedService": {
+							"referenceName": "staginglinkedserve",
+							"type": "LinkedServiceReference"
+						},
+						"folderPath": "myfilesysname"
+					},
+					"compute": {
+						"coreCount": 8,
+						"computeType": "General"
+					},
+					"traceLevel": "Fine"
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2023-12-08T05:38:55Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
